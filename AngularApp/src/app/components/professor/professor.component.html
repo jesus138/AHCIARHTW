@@ -1,0 +1,20 @@
+<div class="container">
+    <header>
+        <h2>{{prof.name}}</h2>
+        <p>{{prof.position}}</p>
+    </header>
+    <div>
+        <p>Raum</p>
+        <p>{{prof.room}}</p>
+    </div>
+    <ul>
+        <li *ngFor="let le of prof.lectures">{{le}}</li>
+    </ul>
+    <footer>
+        <p>Verfügbar</p>
+        <p *ngIf="prof.available" class="yes">Ja</p>
+        <p *ngIf="!prof.available" class="no">Nein</p>
+        <p>Aufenthaltsort</p>
+        <p>{{prof.location}}</p>
+    </footer>
+</div>

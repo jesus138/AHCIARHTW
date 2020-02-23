@@ -1,0 +1,20 @@
+<div class="container">
+    <header>
+        <h2>Belegung der Lernräume</h2>
+    </header>
+    <ul>
+        <li *ngFor="let learn of learning">
+            <div class="top">
+                <h3>{{learn.room}}</h3>
+                <div>
+                    <p>{{learn.busy}} %</p>
+                    <p>{{learn.people}} Personen</p>
+                </div>
+                <svg class="busy" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="30" height="30" class="all"/>
+                    <rect x="0" [attr.y]="getY(learn)" width="30" height="30" [class.ok]="learn.busy<=35" [class.warn]="learn.busy>35&&learn.busy<=70" [class.problem]="learn.busy>70"/>
+                </svg>
+            </div>
+        </li>
+    </ul>
+</div>

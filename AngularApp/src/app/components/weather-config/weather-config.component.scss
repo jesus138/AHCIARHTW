@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+
+    h4{
+        justify-self: start;
+    }
+
+    div{
+        justify-self: end;
+
+        form.weather{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<header>
+  <h1>AR UI Scenarios</h1>
+  <nav></nav>
+  <mat-form-field>
+    <mat-label>Select Scenario</mat-label>
+    <mat-select [formControl]="scenarioForm" (selectionChange)="onScenario()">
+      <mat-option *ngFor="let scenario of scenarios" [value]="scenario.link">{{scenario.label}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

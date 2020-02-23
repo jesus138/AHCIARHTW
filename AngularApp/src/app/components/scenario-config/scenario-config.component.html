@@ -1,0 +1,6 @@
+<div>
+    <h4>{{title}}</h4>
+    <form [formGroup]="form">
+        <mat-checkbox *ngFor="let topic of topics" [formControlName]="topic.label" (input)="onInput(topic.label)">{{topic.label}}</mat-checkbox>
+    </form>
+</div>

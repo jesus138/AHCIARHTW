@@ -1,0 +1,63 @@
+<div class="container">
+    <header>
+        <h2>Schwarzes Brett</h2>
+        <span>+{{blackboard.count}}</span>
+    </header>
+    <section>
+        <div>
+            <div [class.selected]="!pinned">
+                <img src="assets/icons/clipboard.png" (click)="setModePinned(false)" class="invert"/>
+            </div>
+            <div [class.selected]="pinned">
+                <img src="assets/icons/pin.png" (click)="setModePinned(true)"/>
+            </div>
+            <p *ngIf="pinned">Permanent vermerkte Einträge</p>
+            <p *ngIf="!pinned">Alle Einträge</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <div>
+                            <p>Datum</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <p>Beschreibung</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <p>Autor</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <p>Modul</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of getItems()">
+                    <td>{{item.date}}</td>
+                    <td>{{item.label}}</td>
+                    <td>{{item.author}}</td>
+                    <td>{{item.module}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer *ngIf="!pinned">
+            <img class="left" src="assets/icons/arrow.png"/>
+            <ol>
+                <li *ngFor="let i of getPageNumbers()" [class.selected]="i==cpage" (click)="selectPage(i)">{{i}}</li>
+            </ol>
+            <img class="right" src="assets/icons/arrow.png"/>
+        </footer>
+    </section>
+</div>

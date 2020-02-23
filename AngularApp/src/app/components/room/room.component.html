@@ -1,0 +1,35 @@
+<div class="container">
+    <header>
+        <h2>{{room.location}}</h2>
+        <p>{{room.type}}</p>
+    </header>
+    <div class="status">
+        <p>Status</p>
+        <p *ngIf="room.status!=undefined">{{room.status}}</p>
+        <p *ngIf="room.status==undefined">Keine Statusinformationen</p>
+        <img src="assets/icons/warning.png" *ngIf="room.status == 'Nicht Stören'"/>
+        <img src="assets/icons/info.png" *ngIf="room.status != 'Nicht Stören' && room.status != undefined"/>
+    </div>
+    <div class="places">
+        <p>Plätze</p>
+        <p>{{room.places}}</p>
+        <p>Belegt</p>
+        <p>{{room.placesbusy}}</p>
+    </div>
+    <ul>
+        <li *ngFor="let eq of room.equipment">
+            <div>
+                <p>{{eq.label}}</p>
+                <p>{{eq.qty}}</p>
+            </div>
+        </li>
+    </ul>
+    <div class="lecture" *ngIf="room.lecture != null">
+        <p>Derzeitige Vorlesung</p>
+        <p>{{room.lecture}}</p>
+    </div>
+    <div class="contact">
+        <p>Verantwortlicher</p>
+        <p>{{room.contact}}</p>
+    </div>
+</div>

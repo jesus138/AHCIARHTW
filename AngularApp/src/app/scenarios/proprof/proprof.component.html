@@ -1,0 +1,22 @@
+<header>
+    <h3>Scenario Project Professor</h3>
+    <p>Project poster next to the office of a professor</p>
+    <section>
+        <div>
+            <app-scenario-config [topics]="topics" title="Configuration" (topicChange)="onTopicChange($event)">
+                </app-scenario-config>
+        </div>
+    </section>
+</header>
+<section class="main">
+    <img src="assets/proprof.jpg" />
+    <div class="overlay">
+        <app-overlay></app-overlay>
+    </div>
+    <div class="project" *ngIf="isProject">
+        <app-project [project]="project"></app-project>
+    </div>
+    <div class="prof" *ngIf="isProf">
+        <app-professor [prof]="prof"></app-professor>
+    </div>
+</section>

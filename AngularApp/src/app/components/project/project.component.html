@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>{{project.name}}</h2>
+    <p>{{project.description}}</p>
+    <div>
+        <p>{{project.semester}}</p>
+        <p>{{project.course}}</p>
+    </div>
+    <p class="lec">{{project.lecture}}</p>
+    <ul>
+        <li *ngFor="let a of project.authors">{{a}}</li>
+    </ul>
+    <p>{{project.professor}}</p>
+</div>

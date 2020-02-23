@@ -1,0 +1,57 @@
+div.container{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    header{
+        margin-bottom: 10px;
+        h2{
+            margin: 0;
+        }
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            div.top{
+                display: flex;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 10px;
+                }
+            }
+            h3, p{
+                margin: 0;
+            }
+            h3{
+                flex: 1;
+                margin-right: 10px;
+            }
+        }
+        li:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    svg.busy{
+        rect.all{
+            fill: none;
+            stroke: black;
+            stroke-width: 1px;
+        }
+        rect.ok{
+            fill: rgba(0, 128, 0, 0.8);
+        }
+        rect.warn{
+            fill: rgba(255, 255, 0, 0.8);
+        }
+        rect.problem{
+            fill: rgba(255, 0, 0, 0.8);
+        }
+    }
+}

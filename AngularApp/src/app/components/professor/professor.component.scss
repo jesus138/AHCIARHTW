@@ -1,0 +1,64 @@
+div.container{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    color: white;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+    header{
+        display: flex;
+        align-items: center;
+        h2, p{
+            margin: 0;
+        }
+        p{
+            flex: 1;
+            text-align: right;
+            font-style: italic;
+            margin-left: 20px;
+        }
+    }
+    >div{
+        display: flex;
+        p:last-of-type{
+            text-align: right;
+            flex: 1;
+        }
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        li{
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(0, 0, 255, 0.4);
+            border: 1px solid silver;
+            flex: 1;
+        }
+    }
+    footer{
+        margin-top: 10px;
+        display: flex;
+        p{
+            margin: 0;
+            padding: 10px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        p:nth-child(odd){
+            background-color: rgba($color: #000000, $alpha: 0.6);
+        }
+        p:nth-child(even){
+            background-color: rgba(0, 0, 255, 0.4);
+        }
+        p.yes{
+            background-color: rgba(0, 128, 0, 0.4);
+        }
+        p.no{
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+    }
+}

@@ -1,0 +1,130 @@
+Third party icons
+---------------------------------------------------------------------------------------
+
+rain.png
+- Regen icon icon by Icons8
+- https://icons8.de/icons/set/rain
+
+warning.png
+- Icon made by Anu Rocks from www.freeicons.io
+- https://freeicons.io/regular-life-icons/sign-warning-icon-17898
+
+info.png
+- Icon made by Free Preloaders from www.freeicons.io
+- https://freeicons.io/news-icons/info-icon-5622
+
+sunny.png
+- Icon made by Oscar EstMont from www.freeicons.io
+- https://freeicons.io/weather-2/icon-sun-lineal-color-icon-28915
+
+clipboard.png
+- Icon made by Muhammad Haq from www.freeicons.io
+- https://freeicons.io/document-icon/clipboard-list-icon-icon-25603
+
+calendar.png
+- Icon made by freeicons from www.freeicons.io
+- https://freeicons.io/business-icons-2/wall-calendar-icon-icon
+
+email.png
+- Icon made by Tinu CA from www.freeicons.io
+- https://freeicons.io/email-icons04/email-icon-28824
+
+megaphone.png
+- Icon made by Anu Rocks from www.freeicons.io
+- https://freeicons.io/pioneer-icons-2/multimeda-speaker-megaphone-icon-14334
+
+cutlery.png
+- Icon made by freeicon from www.freeicons.io
+- https://freeicons.io/dripicons-v.2-free-icon-set/cutlery-icon-1684
+
+burger.png
+- Icon made by Muhammad Haq from www.freeicons.io
+- https://freeicons.io/life-style-icons-3/food-burger-icon-34692
+
+bus.png
+- Icon made by Raj Dev from www.freeicons.io
+- https://freeicons.io/transport-icons/bus-icon-icon
+
+toilet.png
+- Icon made by Free Preloaders from www.freeicons.io
+- https://freeicons.io/material-icons-notification/wc-icon-15532
+
+male.png
+- Icon made by Fasil from www.freeicons.io
+- https://freeicons.io/common-style-icons-9/male-icon-11298#
+
+schedule.png
+- Room Finder icon by https://icons8.de
+- https://icons8.de/icons/set/room-finder
+
+shelf.png
+- Bücherregal icon icon by Icons8
+- https://icons8.de/icons/set/book-shelf
+
+cloudy.png
+- Leicht bewölkt Tag icon icon by Icons8
+- https://icons8.de/icons/set/partly-cloudy-day
+
+snow.png
+- Schnee icon icon by Icons8
+- https://icons8.de/icons/set/snow
+
+fog.png
+- Nebel Tag icon icon by Icons8
+- https://icons8.de/icons/set/fog-day
+
+clouds.png
+- Wolken icon icon by Icons8
+- https://icons8.de/icons/set/clouds
+
+humidity.png
+- Feuchtigkeitsmesser icon icon by Icons8
+- https://icons8.de/icons/set/hygrometer
+
+temp.png
+- Temperatur icon icon by Icons8
+- https://icons8.de/icons/set/temperature
+
+umbrella.png
+- Trocken Lassen icon icon by Icons8
+- https://icons8.de/icons/set/keep-dry
+
+windsock.png
+- Windsack icon icon by Icons8
+- https://icons8.de/icons/set/windsock
+
+pin.png
+- Pinnadel 2 icon icon by Icons8
+- https://icons8.de/icons/set/pin-2
+
+sort.png
+- Sortieren icon icon by Icons8
+- https://icons8.de/icons/set/sort--v2
+
+arrow.png
+- Pfeil: Ausklappen icon icon by Icons8
+- https://icons8.de/icons/set/expand-arrow
+
+facility.png
+- Gebäude icon icon by Icons8
+- https://icons8.de/icons/set/building
+
+location.png
+- Weltweiter Standort icon icon by Icons8
+- https://icons8.de/icons/set/worldwide-location
+
+learning.png
+- Lernen icon icon by Icons8
+- https://icons8.de/icons/set/learning
+
+stopwatch.png
+- Stoppuhr icon icon by Icons8
+- https://icons8.de/icons/set/stopwatch
+
+exam.png
+- Prüfung icon icon by Icons8
+- https://icons8.de/icons/set/exam
+
+survey.png
+- Umfrage icon icon by Icons8
+- https://icons8.de/icons/set/survey

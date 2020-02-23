@@ -1,0 +1,16 @@
+div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+
+    h4{
+        justify-self: start;
+    }
+
+    form{
+        justify-self: end;
+        display: grid;
+        gap: 4px 8px;
+        grid-template-columns: repeat(3, auto);
+    }
+}

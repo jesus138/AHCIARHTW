@@ -1,0 +1,37 @@
+header{
+    section{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+section.main{
+    position: relative;
+    min-width: 1600px;
+    min-height: 900px;
+    max-width: 1600px;
+    max-height: 900px;
+
+    div.overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    div.schedule{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+}

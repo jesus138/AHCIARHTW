@@ -1,0 +1,37 @@
+<section class="main">
+    <div class="auxilary">
+        <app-auxilary></app-auxilary>
+    </div>
+    <div class="important">
+        <app-important (learn)="isLearning=!isLearning"></app-important>
+    </div>
+    <div class="weather">
+        <app-weather [weather]="weather" (detail)="isWeatherDetail=!isWeatherDetail"></app-weather>
+    </div>
+    <div class="blackboard">
+        <app-blackboard [blackboard]="blackboard"></app-blackboard>
+    </div>
+    <div class="learning" *ngIf="isLearning">
+        <app-learning [learning]="learning"></app-learning>
+    </div>
+    <div class="weatherdetail" *ngIf="isWeatherDetail">
+        <app-weather-detail [today]="weatherToday" [tomorrow]="weatherTomorrow" [date]="date"></app-weather-detail>
+    </div>
+    <div class="map" *ngIf="!mapLarge">
+        <app-map local="assets/map/g2plan2.png" global="assets/map/htwmap2.PNG" (toggle)="mapLarge=true"></app-map>
+    </div>
+    <div class="maplarge" *ngIf="mapLarge">
+        <app-map local="assets/map/g2plan2.png" global="assets/map/htwmap2.PNG" [large]="true"
+            (toggle)="mapLarge=false"></app-map>
+    </div>
+    <div class="shortplan">
+        <app-short-plan [plan]="shortPlan"></app-short-plan>
+    </div>
+    <div class="events">
+        <app-events [events]="events" (toggleEmail)="isEmail=!isEmail">
+        </app-events>
+    </div>
+    <div class="mail" *ngIf="isEmail">
+        <app-email [mail]="mail"></app-email>
+    </div>
+</section>

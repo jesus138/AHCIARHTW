@@ -1,0 +1,62 @@
+<div class="container">
+    <header>
+        <nav>
+            <ol>
+                <li [class.selected]="isToday" (click)="select(true)">
+                    <img [src]="today.weather.img()"/>
+                    <h2>Today</h2>
+                </li>
+                <li [class.selected]="!isToday" (click)="select(false)">
+                    <img [src]="tomorrow.weather.img()"/>
+                    <h2>Tomorrow</h2>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <article>
+        <div>
+            <div>
+                <p *ngIf="isToday">{{date | date:'dd.MM'}}</p>
+                <p *ngIf="!isToday">{{getTomorrow() | date:'dd.MM'}}</p>
+                <img [src]="detail.weather.img()"/>
+            </div>
+            <div>
+                <p>{{detail.description}}</p>
+                <div>
+                    <img src="assets/icons/humidity.png"/>
+                    <h3>Luftfeuchtigkeit</h3>
+                    <p>{{detail.humidity}}</p>
+                    <img src="assets/icons/windsock.png"/>
+                    <h3>Windstärke</h3>
+                    <p>{{detail.wind}}</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="assets/icons/temp.png" />
+                <h2>{{detail.mean}}°C</h2>
+                <div>
+                    <p>Max</p>
+                    <p>{{detail.high}}°C</p>
+                    <p>Min</p>
+                    <p>{{detail.min}}°C</p>
+                </div>
+            </div>
+            <div *ngIf="detail.warnings != undefined && detail.warnings.length > 0">
+                <img src="assets/icons/warning.png" />
+                <div>
+                    <p>Warnungen:</p>
+                    <p>+{{detail.warnings.length}}</p>
+                    <ul>
+                        <li *ngFor="let warn of detail.warnings">{{warn}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info" *ngIf="detail.warnings == undefined || detail.warnings.length == 0">
+                <img src="assets/icons/info.png" />
+                <p>Keine Warnungen</p>
+            </div>
+        </div>
+    </article>
+</div>

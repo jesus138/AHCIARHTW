@@ -1,0 +1,96 @@
+div.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+    width: 600px;
+    header{
+        h2{
+            margin: 0;
+            padding: 10px;
+            padding-bottom: 0;
+        }
+        p{
+            text-align: right;
+            padding-right: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display:  grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: stretch;
+            justify-items: stretch;
+            li{
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            li.selected{
+                background-color: rgba(0, 0, 0, 0.8);
+                color: gold;
+            }
+        }
+    }
+    section{
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            td, th{
+                border: 1px solid silver;
+                padding: 10px;
+            }
+            th{
+                background-color: rgba(0, 0, 0, 0.6);
+                div{
+                    display: flex;
+                    align-items: center;
+                    p{
+                        flex: 1;
+                        text-align: left;
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                        justify-self: right;
+                    }
+                }
+            }
+            tr.new{
+                td{
+                    background-color: rgba(255, 0, 0, 0.4);
+                }
+            }
+        }
+        footer{
+            display: flex;
+            padding: 10px;
+            span{
+                display: inline-block;
+                padding: 0 5px;
+            }
+            span.current{
+                text-decoration: underline;
+                font-weight: bold;
+                color: gold;
+            }
+            img{
+                filter: invert(1);
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+            }
+            img.left{
+                align-self: center;
+                transform: rotate(90deg);
+                margin-left: auto;
+            }
+            img.right{
+                transform: rotate(-90deg);
+                margin-right: auto;
+            }
+        }
+    }
+}

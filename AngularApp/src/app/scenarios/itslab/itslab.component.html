@@ -1,0 +1,21 @@
+<header>
+    <h3>Scenario TS Lab</h3>
+    <p>Stand in front of ITS Lab</p>
+    <section>
+        <div>
+            <app-scenario-config [topics]="topics" title="Configuration" (topicChange)="onTopicChange($event)"></app-scenario-config>
+        </div>
+    </section>
+</header>
+<section class="main">
+    <img src="assets/labits.jpg" />
+    <div class="overlay">
+        <app-overlay></app-overlay>
+    </div>
+    <div class="project" *ngIf="isProject">
+        <app-project [project]="project"></app-project>
+    </div>
+    <div class="room" *ngIf="isRoom">
+        <app-room [room]="room"></app-room>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+<div>
+    <h4>Weather</h4>
+    <div>
+        <form [formGroup]="formWeather" class="weather">
+            <mat-form-field>
+                <mat-label>Wetter</mat-label>
+                <mat-select formControlName="weather">
+                    <mat-option *ngFor="let type of weatherTypes" [value]="type.value">{{type.label}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Zeit</mat-label>
+                <input matInput formControlName="time" [value]="weather.time"/>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Temperatur</mat-label>
+                <input matInput formControlName="temperature" [value]="weather.temperature"/>
+            </mat-form-field>
+            <mat-checkbox formControlName="detail">Detail Ansicht</mat-checkbox>
+        </form>
+    </div>
+</div>

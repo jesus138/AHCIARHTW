@@ -1,0 +1,12 @@
+<table>
+    <thead>
+        <tr>
+            <th *ngFor="let e of headrow()" [class.now]="e.isnow">{{e.label}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let r of body()">
+            <td *ngFor="let e of r" [class.now]="e.isnow" [class.irregular]="e.isirregular">{{e.label}}</td>
+        </tr>
+    </tbody>
+</table>

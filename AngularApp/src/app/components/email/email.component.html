@@ -1,0 +1,65 @@
+<div class="container">
+    <header>
+        <h2>Studmail</h2>
+        <p>{{mail.email}}</p>
+        <ul>
+            <li [class.selected]="isrec" (click)="isrec=true">Posteingang</li>
+            <li [class.selected]="!isrec" (click)="isrec=false">Gesendet</li>
+        </ul>
+    </header>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th *ngIf="isrec">
+                        <div>
+                            <p>Sender</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                    <th *ngIf="!isrec">
+                        <div>
+                            <p>Empfänger</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <p>Betreff</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <p>Datum</p>
+                            <img src="assets/icons/sort.png"/>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngIf="isrec">
+                    <tr *ngFor="let e of mail.received" [class.new]="e.new">
+                        <td>{{e.entity}}</td>
+                        <td>{{e.regard}}</td>
+                        <td>{{e.date}}</td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="!isrec">
+                    <tr *ngFor="let e of mail.sent">
+                        <td>{{e.entity}}</td>
+                        <td>{{e.regard}}</td>
+                        <td>{{e.date}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+        <footer>
+            <img src="assets/icons/arrow.png" class="left"/>
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <img src="assets/icons/arrow.png" class="right"/>
+        </footer>
+    </section>
+</div>

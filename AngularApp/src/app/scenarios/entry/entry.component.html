@@ -1,0 +1,19 @@
+<header>
+    <h3>Scenario Entry</h3>
+    <p>Stand in the entry of the IT</p>
+    <section>
+        <div>
+            <app-scenario-config [topics]="topics" title="Configuration" (topicChange)="onTopicChange($event)">
+                </app-scenario-config>
+        </div>
+    </section>
+</header>
+<section class="main">
+    <img src="assets/entry.jpg" />
+    <div class="overlay">
+        <app-overlay></app-overlay>
+    </div>
+    <div class="schedule" *ngIf="isSchedule">
+        <app-schedule [schedule]="schedule"></app-schedule>
+    </div>
+</section>

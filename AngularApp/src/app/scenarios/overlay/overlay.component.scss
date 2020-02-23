@@ -1,0 +1,79 @@
+section.main{
+    position: relative;
+    min-width: 1600px;
+    min-height: 900px;
+    max-width: 1600px;
+    max-height: 900px;
+
+    div.weather{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    div.auxilary{
+        position: absolute;
+        right: 10px;
+        top: 20%;
+    }
+
+    div.important{
+        position: absolute;
+        left: 10px;
+        top: 30%;
+    }
+
+    div.learning{
+        position: absolute;
+        left: 7%;
+        top: 26%;
+    }
+
+    div.blackboard{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    div.weatherdetail{
+        position: absolute;
+        top: 80px;
+        right: 140px;
+    }
+
+    div.blackboarddetail{
+        position: absolute;
+        top: 80px;
+        left: 350px;
+    }
+
+    div.map{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    div.maplarge{
+        position: absolute;
+        right: 25%;
+        bottom: 50px;
+    }
+
+    div.shortplan{
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    div.events{
+        position: absolute;
+        left: 40%;
+        top: 10px;
+    }
+
+    div.mail{
+        position: absolute;
+        left: 36%;
+        top: 70px;
+    }
+}

@@ -1,0 +1,15 @@
+div.container{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 40px;
+        width: 40px;
+        margin-bottom: 40px;
+    }
+    img:last-of-type{
+        margin-bottom: 0;
+    }
+}

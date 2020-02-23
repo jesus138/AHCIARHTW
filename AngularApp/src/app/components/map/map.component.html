@@ -1,0 +1,9 @@
+<div [class.large]="large" class="container">
+    <div class="local" [class.selected]="islocal">
+        <img src="assets/icons/facility.png" (click)="setMode(true)"/>
+    </div>
+    <div class="global" [class.selected]="!islocal">
+        <img src="assets/icons/location.png" (click)="setMode(false)"/>
+    </div>
+    <img class="map" [src]="map" (click)="onToggle()"/>
+</div>

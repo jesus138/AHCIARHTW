@@ -1,0 +1,14 @@
+<section>
+    <header>
+        <img src="assets/icons/clipboard.png" (click)="large=!large"/>
+        <h3>Schwarzes Brett</h3>
+        <span *ngIf="blackboard.count > 0">+{{blackboard.count}}</span>
+        <span *ngIf="blackboard.count <= 0">-</span>
+    </header>
+    <ul *ngIf="large">
+        <li *ngFor="let entry of blackboard.entries">
+            <p>{{entry.label}}</p>
+            <time>{{entry.date}}</time>
+        </li>
+    </ul>
+</section>

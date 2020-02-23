@@ -1,0 +1,42 @@
+div.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+    header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        img{
+            width: 30px;
+            height: 30px;
+            filter: invert(1);
+        }
+        h3{
+            margin: 0;
+            padding: 10px 15px;
+        }
+        span{
+            padding: 8px;
+            background-color: rgba(70, 160, 255, 0.6);
+            margin-left: auto;
+            border-radius: 50%;
+        }
+    }
+    div{
+        display: flex;
+        time{
+            padding: 10px 15px;
+        }
+        p{
+            background-color: rgba(0, 0, 0, 0.4);
+            margin: 0;
+            padding: 10px 15px;
+        }
+        p:first-of-type{
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+        }
+    }
+}
